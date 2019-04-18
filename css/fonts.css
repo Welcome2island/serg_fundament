@@ -1,0 +1,79 @@
+﻿@font-face {
+	font-family:'hel_roman';
+	src:url('../fonts/helveticaneuecyr-roman-webfont.html');
+	src:url('../fonts/helveticaneuecyr-roman-webfontd41d.html?') format('embedded-opentype'),
+		url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+		url('../fonts/helveticaneuecyr-roman-webfont-2.html') format('truetype'),
+		url('../fonts/helveticaneuecyr-roman-webfont-3.html') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'hel_bold';
+	src:url('../fonts/helveticaneuecyr-bold-webfont.html');
+	src:url('../fonts/helveticaneuecyr-bold-webfontd41d.html?') format('embedded-opentype'),
+		url('../fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+		url('../fonts/helveticaneuecyr-bold-webfont-2.html') format('truetype'),
+		url('../fonts/helveticaneuecyr-bold-webfont-3.html') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'hel_light';
+	src:url('../fonts/helveticaneuecyr-light-webfont.html');
+	src:url('../fonts/helveticaneuecyr-light-webfontd41d.html?') format('embedded-opentype'),
+		url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+		url('../fonts/helveticaneuecyr-light-webfont-2.html') format('truetype'),
+		url('../fonts/helveticaneuecyr-light-webfont-3.html') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'hel_medium';
+	src:url('../fonts/helveticaneuecyr-medium-webfont.html');
+	src:url('../fonts/helveticaneuecyr-medium-webfontd41d.html?') format('embedded-opentype'),
+		url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+		url('../fonts/helveticaneuecyr-medium-webfont-2.html') format('truetype'),
+		url('../fonts/helveticaneuecyr-v-webfont.html') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'hel_ultralight';
+	src:url('../fonts/helveticaneuecyr-ultralight-webfont.html');
+	src:url('../fonts/helveticaneuecyr-ultralight-webfontd41d.html?') format('embedded-opentype'),
+		url('../fonts/helveticaneuecyr-ultralight-webfont.woff') format('woff'),
+		url('../fonts/helveticaneuecyr-ultralight-webfont-2.html') format('truetype'),
+		url('../fonts/helveticaneuecyr-ultralight-webfont-3.html') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'hel_italic';
+	src:url('../fonts/helveticaneuecyr-italic-webfont.html');
+	src:url('../fonts/helveticaneuecyr-italic-webfontd41d.html?') format('embedded-opentype'),
+		url('../fonts/helveticaneuecyr-italic-webfont.woff') format('woff'),
+		url('../fonts/helveticaneuecyr-italic-webfont-2.html') format('truetype'),
+		url('../fonts/helveticaneuecyr-italic-webfont-3.html') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+font-family: 'ALSRubl';
+src: url('../fonts/rouble.ttf'); /* Путь к файлу со шрифтом */
+}
+
+
+@font-face {
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans.html");
+	src: url("../fonts/ptsansd41d.html?") format("embedded-opentype"),
+			 url("../fonts/ptsans.woff") format("woff"),
+			 url("../fonts/ptsans.ttf") format("truetype");
+}
