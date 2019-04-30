@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
 
-<meta name="description" content="Строительство домов, бань, дачных домиков и котеджей по Свердловской области">
-<!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">-->
-<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-<title>Строительство фундаментов под ключ</title>
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<!--<link rel="icon" href="http://sk-usadiba.ru/images/favicon.html" type="image/x-icon">-->
+    <meta name="description" content="Строительство домов, бань, дачных домиков и котеджей по Свердловской области">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">-->
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+    <title>Строительство фундаментов под ключ</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="http://sk-usadiba.ru/images/favicon.html" type="image/x-icon">-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
     <script type="text/javascript" src="js/jquery.ankor.js"></script>
@@ -23,23 +23,21 @@
     <script type="text/javascript" src="js/parsley.js"></script>
 
 
-
-
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox8cbb.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/carousel.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/carousel.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen"/>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
 
-<?php
+    <?php
     $geo = $_GET['geo'];
     $geo_text = 'в Санкт-Петербурге и Ленинградской области';
     $type = $_GET['f_type'];
@@ -69,7 +67,7 @@
             $geo_text = 'в Ломоносовском районе';
             break;
         case "kirov":
-           $geo_text = 'в Кировском районе';
+            $geo_text = 'в Кировском районе';
             break;
     }
     ?>
@@ -192,25 +190,32 @@
                 navigateTo(0); // Start at the beginning
             });
         </script>
-        <form class="demo-form">
+        <form class="demo-form" method="post" action="letter.php">
             <div class="form-section">
-                <label for="firstname">First Name:</label>
-                <input type="text" class="form-control" name="firstname" required="">
-
-                <label for="lastname">Last Name:</label>
-                <input type="text" class="form-control" name="lastname" required="">
+                <label for="name">Как к Вам можно обращаться?</label>
+                <input type="text" class="form-control" name="name" required="">
             </div>
 
             <div class="form-section">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" name="email" required="">
+
+                <label for="type">Отлично, <?php echo $name ?>! <br/>Какой тип фундамента рассчитываем?</label>
+                <input type="text" class="form-control" name="type" required="">
             </div>
 
             <div class="form-section">
-                <label for="color">Favorite color:</label>
-                <input type="text" class="form-control" name="color" required="">
+                <label for="size">А какого размера будет дом?</label>
+                <input type="text" class="form-control" name="size" required="">
             </div>
 
+            <div class="form-section">
+                <label for="place">Отличный размер! А в какой районе будет строительство?</label>
+                <input type="text" class="form-control" name="place" required="">
+            </div>
+
+            <div class="form-section">
+                <label for="nomer">Спасибо! Оставьте, пожалуйста, нам свой номер!</label>
+                <input type="text" class="form-control" name="nomer" required="">
+            </div>
             <div class="form-navigation">
                 <button type="button" class="previous btn btn-info pull-left">&lt; Previous</button>
                 <button type="button" class="next btn btn-info pull-right">Next &gt;</button>
@@ -269,10 +274,12 @@
                   <!--</a>-->
                   <!--</div>-->
                   <div class="offer-quiz">
-                    <h1>Рассчитайте фундамент за 5 минут и получите скидку 10%!</h1>
-                    <span>Ответьте на 5 вопросов, получите скидку, бесплатный выезд специалиста и предврительный расчет фундамента!</span>
-                  </div><div class="pulse">
-                    <a id="go" rel="leanModal" name="makeorder" href="#test" class="test">Нана!</a>
+                      <div class="quiz_bg"></div>
+                      <h2>Узнайте стоимость фундамента, ответив на 5 вопросов и получите <strong>скидку 10%</strong>!</h2><div class="podarok"></div>
+<!--                      <div class="pulse"></div>-->
+                      <div class="testbtn">
+                        <a id="go" rel="leanModal" name="makeorder" href="#test" class="test">Начать!</a>
+                      </div>
                   </div>
               </div>
         <div class="ttl_block">

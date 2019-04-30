@@ -528,6 +528,41 @@ p {
 	clear:both;
 }
 
+.podarok {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../pod.png") no-repeat center;
+    background-size: 20%;
+    -webkit-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    -moz-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    -o-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+}
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+    }
+}
+
 header {
     display: inline-block;
 	height:130px;
@@ -542,6 +577,7 @@ header > * {
 header > * {
     line-height:initial;
 }
+
 
 .pulse {
     position: absolute;
@@ -604,6 +640,76 @@ header > * {
     height: 100px;
     margin-left: -10px;
     animation: animate 5s linear infinite
+}
+
+.test {
+    z-index: 1000;
+    font-size: 0.7em;
+}
+@-webkit-keyframes sheen {
+    0% {
+        -webkit-transform: skewY(-45deg) translateX(0);
+        transform: skewY(-45deg) translateX(0);
+    }
+    100% {
+        -webkit-transform: skewY(-45deg) translateX(12.5em);
+        transform: skewY(-45deg) translateX(12.5em);
+    }
+}
+@keyframes sheen {
+    0% {
+        -webkit-transform: skewY(-45deg) translateX(0);
+        transform: skewY(-45deg) translateX(0);
+    }
+    100% {
+        -webkit-transform: skewY(-45deg) translateX(12.5em);
+        transform: skewY(-45deg) translateX(12.5em);
+    }
+}
+.testbtn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.test {
+    padding: 0.75em 2em;
+    text-align: center;
+    text-decoration: none;
+    color: #ff000f;
+    border: 2px solid #ff000f;
+    font-size: 24px;
+    display: inline-block;
+    border-radius: 0.3em;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.test:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    -webkit-transform: skewX(-45deg) translateX(0);
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+}
+.test:hover {
+    background-color: #ff000f;
+    color: #fff;
+    border-bottom: 4px solid #05070a;
+}
+.test:hover:before {
+    -webkit-transform: skewX(-45deg) translateX(13.5em);
+    transform: skewX(-45deg) translateX(13.5em);
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -840,10 +946,14 @@ h1 b {
 }
 
 
-.offer-quiz h1{
+.offer-quiz h2{
     font-size: 2em;
     text-align: -webkit-auto;
     text-shadow: none;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(0, 0, 0, 0.13);
 }
 
 .order {
@@ -1660,12 +1770,12 @@ a.bttn {
 	margin:0 auto 25px auto;
 }
 
-.counts a {
-	width:392px;
-	height:120px;
-	position:relative;
+/*.counts a {*/
+	/*width:392px;*/
+	/*height:120px;*/
+	/*position:relative;*/
 
-}
+/*}*/
 
 .duk {
 	background:url(../images/line2.png) no-repeat center 15px;
